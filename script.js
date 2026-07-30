@@ -2,7 +2,7 @@
 // CONTAGEM REGRESSIVA
 // ===============================
 
-const dataFesta = new Date("August 16, 2026 19:30:00").getTime();
+const dataFesta = new Date("August 15, 2026 18:30:00").getTime();
 
 
 function atualizarContador(){
@@ -72,7 +72,7 @@ function confirmar(){
 
 
     if(nome === ""){
-        alert("Por favor, informe seu nome.");
+        alert("Por favor, informe seu nome e do seu acompanhante.");
         return;
     }
 
