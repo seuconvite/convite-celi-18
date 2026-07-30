@@ -83,19 +83,19 @@ function confirmar(){
 
 
     let mensagem =
-`Olá! Meu nome é ${nome}.
-Confirmo minha presença na festa de 18 anos da Celi Cristine Barbosa De Jesus.
+`Eii! Meu nome é ${nome}.
+Com muita alegria, confirmo minha presença na comemoração do seu aniversário de 18 anos! 😊.
 
 Quantidade de pessoas: ${quantidade}
 
-Nos vemos no dia 16/08/2026 às 19h30! 💙`;
+Nos vemos no dia 16/08/2026 às 18h30!`;
 
 
-    let telefone = "5527992497940";
+    let telefone = "5527992250279";
 
 
     let url =
-    "https://wa.me/" + telefone +
+    "https://wa.me/" + 5527992250279 +
     "?text=" +
     encodeURIComponent(mensagem);
 
@@ -132,16 +132,15 @@ for(let i=0;i<120;i++){
         y:Math.random()*canvas.height-canvas.height,
 
         tamanho:
-        Math.random()*8+4,
+        Math.random()*4+4,
 
         velocidade:
-        Math.random()*3+2,
+        Math.random()*1+1,
 
         cor:[
-            "#D4AF37",
             "#FFFFFF",
             "#1E90FF",
-            "#4169E1"
+            
         ][
             Math.floor(Math.random()*4)
         ]
