@@ -2,169 +2,139 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>18 Anos - Celi </title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18 Anos - Celi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="loader">
+  <div id="loader">
     <div class="numero18">18</div>
-    <h2> Celi </h2>
-</div>
-
-
-<canvas id="confetti"></canvas>
-
-
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<img src="celi.jpg" class="foto" alt="Celi Cristine">
-
-<h1> 18 Anos </h1>
-
-<h1> Celi <br>
- </h1>
-
-<p>Uma noite especial merece ser celebrada com pessoas especiais.</p>
-
-
-<a class="btn" href="#presenca">
-Confirmar Presença
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<section class="contador">
-
-<h2>Contagem regressiva</h2>
-
-<div class="timer">
-
-<div>
-<span id="dias">0</span>
-<p>Dias</p>
-</div>
-
-<div>
-<span id="horas">0</span>
-<p>Horas</p>
-</div>
-
-<div>
-<span id="minutos">0</span>
-<p>Min</p>
-</div>
-
-<div>
-<span id="segundos">0</span>
-<p>Seg</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="evento">
-
-<h2>Detalhes da Celebração</h2>
-
-<div class="card">
-
-<p>  <b>Lembrete⚠️🩵</b><br>
-    Cada pagará oque for consumido por sua conta própria! 😊</p>
-
-<p>📅 <b>Data</b><br>
-15 de Agosto de 2026</p>
-
-
-<p>🕢 <b>Horário</b><br>
-18:30 </p>
-
-
-<p>📍 <b>Local</b><br>
-Churrasquinho Do Durango
-R. São Gabriel da Palha<br>
- Vale Encantado - VV<br>
-ES, 29113-070</p>
-
-
-<a class="btn dourado" 
-href="https://maps.app.goo.gl/rXusHhjFVWMB5WLg6"
-target="_blank">
-
-Como chegar
-
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<section id="presenca" class="presenca">
-
-<h2>Confirme sua presença</h2>
-
-
-<div class="card">
-
-<input id="nome" placeholder="Seu nome e acompanhante">
-
-
-<input id="quantidade" 
-placeholder="Quantidade de pessoas">
-
-
-<button class="btn" onclick="confirmar()">
-
-Confirmar pelo WhatsApp
-
-</button>
-
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<p>
-Sua presença tornará este momento ainda mais especial 🥳
-</p>
-
-<p>
-Celi Cristine • 18 anos
-</p>
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
+    <h2>Celi</h2>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <!-- SEÇÃO HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="celi.jpg" class="foto" alt="Celi Cristine">
+      <h1>18 Anos</h1>
+      <h1>Celi <br></h1>
+      <p>Uma noite especial merece ser celebrada com pessoas especiais.</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTADOR -->
+  <section class="contador">
+    <h2>Contagem regressiva</h2>
+    <div class="timer">
+      <div>
+        <span id="dias">0</span>
+        <p>Dias</p>
+      </div>
+      <div>
+        <span id="horas">0</span>
+        <p>Horas</p>
+      </div>
+      <div>
+        <span id="minutos">0</span>
+        <p>Min</p>
+      </div>
+      <div>
+        <span id="segundos">0</span>
+        <p>Seg</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO EVENTO -->
+  <section class="evento">
+    <h2>Detalhes da Celebração</h2>
+    <div class="card">
+      <p><b>Lembrete⚠️🩵</b><br>
+      Cada pagará o que for consumido por sua conta própria! 😊</p>
+
+      <p>📅 <b>Data</b><br>
+      15 de Agosto de 2026</p>
+
+      <p>🕢 <b>Horário</b><br>
+      18:30</p>
+
+      <p>📍 <b>Local</b><br>
+      Churrasquinho Do Durango<br>
+      R. São Gabriel da Palha<br>
+      Vale Encantado - VV<br>
+      ES, 29113-070</p>
+
+      <!-- Botão do Google Maps -->
+      <a class="btn dourado" href="https://maps.app.goo.gl/rXusHhjFVWMB5WLg6" target="_blank">
+        Como chegar
+      </a>
+
+      <br><br>
+
+      <!-- Botão de Confirmar Presença movido para cá -->
+      <a class="btn" href="javascript:void(0)" onclick="abrirModal()">
+        Confirmar Presença
+      </a>
+    </div> <!-- Fechamento da div .card -->
+  </section> <!-- Fechamento da section .evento -->
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Sua presença tornará este momento ainda mais especial 🥳</p>
+    <p>Celi Cristine • 18 anos</p>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODAL DE CONFIRMAÇÃO (ISOLADO DO LAYOUT)   -->
+  <!-- ========================================== -->
+  <div id="modal-presenca" class="modal">
+    <div class="modal-content">
+      <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+      <h2>Confirmar Presença</h2>
+      <p>Preencha os dados abaixo para confirmar sua presença na festa da Celi:</p>
+
+      <form id="form-confirmacao" onsubmit="confirmar(event)">
+        <div class="campo">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="presenca">Confirmação de Presença:</label>
+          <select id="presenca" name="presenca">
+            <option value="sim">Confirmar presença</option>
+            <option value="nao">Infelizmente, não poderei comparecer</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="quantidade">Acompanhantes:</label>
+          <select id="quantidade" name="quantidade" onchange="verificarAcompanhantes()">
+            <option value="0">Vou sozinho(a)</option>
+            <option value="1">+ 1 Acompanhante</option>
+            <option value="2">+ 2 Acompanhantes</option>
+            <option value="3">+ 3 Acompanhantes</option>
+          </select>
+        </div>
+
+        <!-- CAMPO DE ACOMPANHANTE -->
+        <div class="campo" id="campo-acompanhante" style="display: none;">
+          <label for="nome-acompanhante">Nome do(s) acompanhante(s):</label>
+          <input type="text" id="nome-acompanhante" name="nome-acompanhante" placeholder="Ex: Maria, João...">
+        </div>
+
+        <button type="submit" class="btn-confirmar">Enviar Confirmação</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
